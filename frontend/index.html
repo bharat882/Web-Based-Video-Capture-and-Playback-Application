@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #video {
+            width: 640px;
+            height: 360px;
+        background-color: #000;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        button[disabled] {
+            opacity: 0.5;
+            cursor: default;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+        <div>
+            <h1>Video Recording Application</h1>
+            <h2>Computer Networks Lab Assignment 2</h2>
+            <video id="video" autoplay></video>
+        </div>
+        <div>
+            <button id="record">Record</button>
+            <button id="stop" disabled>Stop</button>
+            <button id="pause" disabled>Pause</button>
+            <button id="play" disabled>Resume</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
